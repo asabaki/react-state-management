@@ -4,14 +4,12 @@ export interface Todo {
   text: string;
 }
 export interface ApplicationStore {
-  counter: number;
   lists: Set<Todo>;
   addTodo: (todo: Todo) => void;
   deleteTodo: (todo: Todo) => void;
 }
 
 export const useApplicationStore = create<ApplicationStore>((set, get) => ({
-  counter: 0,
   lists: new Set<Todo>(),
   addTodo: (todo: Todo) => {
     set((state) => ({ lists: new Set(state.lists.add(todo)) }));

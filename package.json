@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "asibakatw <asibaka.9@gmail.com>",
+  "private": "true",
   "license": "MIT",
   "workspaces": [
     "packages/*"
